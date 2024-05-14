@@ -31,6 +31,9 @@ class Retail extends AbstractData
             "ship_to" => array(
                 "name" => "setShipTo"
 			),
+            "customer_id" => array(
+                "name" => "setCustomerId"
+            ),
 		));
 
         $optionalFields = array(
@@ -220,6 +223,10 @@ class Retail extends AbstractData
 		if(!empty($csmddsResField)){
 			$this->dataSet['csmdds'] = $csmddsResField;
 		}
+	}
+
+	public function setCustomerId($index, $value) {
+		$this->dataSet[$index] = $value;
 	}
 
 	public function getData(){

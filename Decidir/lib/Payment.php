@@ -26,6 +26,7 @@ class Payment{
 
 		if(!empty($this->cybersource) && $this->cybersource['send_to_cs'] == true){
 			$data['fraud_detection'] = json_decode(json_encode($this->cybersource),TRUE);
+			$data['fraud_detection']['bill_to']['customer_id'] = strval($data['customer']['id']);
 		}
 
 		if(!empty($data["sub_payments"])) {
