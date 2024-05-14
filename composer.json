@@ -1,5 +1,5 @@
 {
-    "name": "payway-ar/php-sdk-venta-online",
+    "name": "lucadamo-dev/decidir-sdk-php",
     "description": "SDK para Payway ventas online",
     "require": {
         "php": ">=5.3"
